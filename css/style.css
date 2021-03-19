@@ -1,0 +1,65 @@
+body{
+    background: #f6fdff;
+    padding-top: 200px;
+}
+
+.present{
+    width: 410px;
+    margin: 0 auto;
+}
+
+.top-box img{
+    position: relative;
+    width: 454px;
+    height: 95px;
+    box-shadow: 1px 2px 4px rgba(0,0,0,0.9)
+    ;
+    z-index: 1;
+    margin: 0 0 -5px -2px;
+    top: 0;
+    left: 0;
+    transition: 
+        top ease-out 0.5s,
+        left ease-out 0.5s,
+        transform ease-out  0.5s;
+}
+
+.box img{
+    position: relative;
+    width: 450px;
+    height: 390px;
+    box-shadow: 1px 2px 4px rgba(0,0,0,0.9);
+}
+
+.present:hover .top-box img{
+    top: -145px;
+    transform: rotateZ(10deg);
+    left: 12px;
+}
+
+.present:hover .tabrik{
+    top: -125px;
+}
+
+.tabrik{
+    text-align: center;
+    height: 0px;
+    /* margin-bottom: -7px; */
+    top: 7px;
+    position: relative;
+    transition: all ease-out 0.7s;
+}
+
+.tabrik h2{
+    padding: 0;
+    margin: 0 0 -12px 0;
+    font-family: hayat;
+    font-size: 75px;
+}
+
+.tabrik p{
+    padding: 0;
+    margin: 0;
+    font-family: hayat;
+    font-size: 32px;
+}
